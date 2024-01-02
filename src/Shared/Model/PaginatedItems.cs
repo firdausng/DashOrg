@@ -1,4 +1,4 @@
-namespace Personnel.Api.Model;
+namespace Shared.Model;
 
 public class PaginatedItems<TEntity>(int pageIndex, int pageSize, long count, IEnumerable<TEntity> data) where TEntity : class
 {

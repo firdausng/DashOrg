@@ -8,10 +8,10 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var migrationsAssembly = typeof(Program).Assembly.GetName().Name;
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        var migrationsAssembly = typeof(Program).Assembly.GetName().Name;
         builder.Services.AddDbContext<PersonnelDbContext>(cfg =>
         {
             cfg.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnectionString"),

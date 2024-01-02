@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personnel.Api", "src\Person
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leave.API", "src\Leave.API\Leave.API.csproj", "{AFD80945-87E2-4B80-9DBC-15791D26E22C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{2E2EC12A-DB88-440D-930C-53198E9F4D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AFD80945-87E2-4B80-9DBC-15791D26E22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFD80945-87E2-4B80-9DBC-15791D26E22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFD80945-87E2-4B80-9DBC-15791D26E22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2EC12A-DB88-440D-930C-53198E9F4D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2EC12A-DB88-440D-930C-53198E9F4D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2EC12A-DB88-440D-930C-53198E9F4D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2EC12A-DB88-440D-930C-53198E9F4D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

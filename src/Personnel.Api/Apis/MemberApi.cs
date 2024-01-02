@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Personnel.Api.Data;
 using Personnel.Api.Dto;
 using Personnel.Api.Model;
+using Shared.Model;
 
 namespace Personnel.Api.Apis;
 

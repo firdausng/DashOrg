@@ -1,3 +1,3 @@
-namespace Personnel.Api.Model;
+namespace Shared.Model;
 
 public record PaginationRequest(int PageSize = 10, int PageIndex = 0);
