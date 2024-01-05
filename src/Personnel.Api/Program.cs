@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Personnel.Api.Apis;
 using Personnel.Api.Data;
 
@@ -25,7 +26,14 @@ public class Program
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
+        builder.Services.AddSwaggerGen(c =>
+        {
+            c.MapType<DateOnly>(() => new OpenApiSchema
+            {
+                Type = "string",
+                Format = "date"
+            });
+        });
 
         var app = builder.Build();
 

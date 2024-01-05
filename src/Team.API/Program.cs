@@ -1,14 +1,12 @@
-using Leave.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Team.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 var migrationsAssembly = typeof(Program).Assembly.GetName().Name;
-builder.Services.AddDbContext<LeaveDbContext>(cfg =>
+builder.Services.AddDbContext<TeamDbContext>(cfg =>
 {
     cfg.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnectionString"),
         options =>

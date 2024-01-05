@@ -20,4 +20,8 @@ public class AddMemberRequest
     public required string Religion { get; set; }
     public required string CitizenshipStatus { get; set; }
     public required string Nationality { get; set; }
+    
+    public required string Designation { get; set; }
+    public required string Location { get; set; }
+    public Guid? ManagerId { get; set; }
 }
